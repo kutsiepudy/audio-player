@@ -56,9 +56,10 @@ function playTrack() {
   audio.play()
     .then(() => {
       button.textContent = "❚❚";
+      document.querySelector(".player").classList.add("playing");
     })
     .catch(err => {
-      alert("Song failed to load, check the console for errors");
+      alert("Song failed to load");
       console.log(err);
     });
 }
@@ -66,6 +67,7 @@ function playTrack() {
 function pauseTrack() {
   audio.pause();
   button.textContent = "▶︎";
+  document.querySelector(".player").classList.remove("playing");
 }
 
 function nextTrack() {
