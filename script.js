@@ -110,7 +110,7 @@ audio.addEventListener("timeupdate", () => {
     let value = (audio.currentTime / audio.duration) * 100;
     seekSlider.value = value;
   }
-  cutrentTimeEl.textContent = formatTime(audio.duration);
+  cutrentTimeEl.textContent = formatTime(audio.currentTime);
 });
 
 audio.addEventListener("loadedmetadata", () => {
