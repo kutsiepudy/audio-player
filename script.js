@@ -21,7 +21,7 @@ const availableSongs = [
   {artist: "Good Kid", track: "Rift", date: "2026", file: "01-rift.mp3", desc: "escaping a toxic relationship and feeling free from conflict(relateable)."},
   {artist: "Sunny Day Service", track: "心に雲を持つ少年", date: "2020", file: "心に雲を持つ少年.mp3", desc: "I uhm, this might get personal, but every time I listen to this song I think about going out there and eploring the world and seeing stuff I've never been able to see spaces I want to see, I think about running away and seeig the world and such all because I tell myself that I don't want to work a 9 to 5 everyday until death."},
   {artist: "Franz Liszt", track: "Liebestraum No. 3", date: "1850", file: "Liszt - Liebestraum No. 3 (Love Dream).mp3", desc: "love, that's all it means to me, love"},
-  {artist: "Vundabar", track: "Alien Blues", date: "2015", file "Alien Blues.mp3", desc: "This song, means a lot to me, like a lot a lot i listened to this when i started martial arts, when I started to self teach myself to code, when I started my first relationship (didn't last) when I told myself that I shouldn't just be a lazy bum and actually use my brain"},
+  {artist: "Vundabar", track: "Alien Blues", date: "2015", file: "Alien Blues.mp3", desc: "This song, means a lot to me, like a lot a lot i listened to this when i started martial arts, when I started to self teach myself to code, when I started my first relationship (didn't last) when I told myself that I shouldn't just be a lazy bum and actually use my brain"},
   {artist: "Kurt Cobain", track: "Montage of Kurt", date: "1988", file: "goofykurtsong.mp3", desc: "Thought it would be cool to add this."}
 ]
 
