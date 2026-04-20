@@ -12,28 +12,32 @@
       <div class="track-name">This Charming Man</div>
       <div class="track-artist">The Smiths</div>
       <div class="release-date">1983</div>
-      <div class="description"></div>
+      <div class="description">Select a track to relive a memory.</div>
     </div>
 
     <div class="buttons">
-      <button onclick="previousTrack()">⏮</button>
-      <button id="play-pause" onclick="playPauseTrack()">▶︎</button>
-      <button onclick="nextTrack()">⏭</button>
+      <button onclick="previousTrack()" aria-label="Previous track">⏮</button>
+      <button id="play-pause" onclick="playPauseTrack()" aria-label="Play or pause">▶︎</button>
+      <button onclick="nextTrack()" aria-label="Next track">⏭</button>
     </div>
 
     <div class="time">
       <span id="current-time">0:00</span>
+      <span> / </span>
       <span id="max-time">0:00</span>
     </div>
 
     <div class="sliders">
       <label>Seek</label>
-      <input type="range" min="0" max="100" value="0" class="seek_slider" onchange="seekTo()" aria-label="Seek">
+      <input type="range" min="0" max="100" value="0" class="seek_slider" oninput="seekTo()" aria-label="Seek">
+
       <label>Volume</label>
-      <input type="range" min="0" max="100" value="100" class="volume_slider" onchange="setVolume()" aria-label="Volume">
+      <input type="range" min="0" max="100" value="100" class="volume_slider" oninput="setVolume()" aria-label="Volume">
     </div>
+
     <audio id="main-audio"></audio>
   </div>
+
   <script src="main.js"></script>
 </body>
 </html>
