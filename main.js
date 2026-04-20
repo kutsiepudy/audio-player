@@ -105,16 +105,13 @@ audio.addEventListener("timeupdate", () => {
 
   if (!isNaN(audio.duration)) {
     let value = (audio.currentTime / audio.duration) * 100;
-    seekSlider.value = value
+    seekSlider.value = value;
   }
+  cutrentTimeel.textContent = formatTime(audio.duration);
 });
 
 audio.addEventListener("loadedmetadata", () => {
   maxTimeEl.textContent = formatTime(audio.duration);
-});
-
-audio.addEventListener("timeupdate", () => {
-  currentTimeEl.textContent = formatTime(audio.currentTime);
 });
 
 audio.addEventListener("ended", nextTrack);
