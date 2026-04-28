@@ -1,5 +1,6 @@
 let audio = document.getElementById("main-audio")
 let button = document.getElementById("play-pause")
+let showSongDesc = document.GetElementById("showDesc")
 let volumeSlider = document.querySelector(".volume_slider")
 let seekSlider = document.querySelector(".seek_slider")
 let trackName = document.querySelector(".track-name")
@@ -63,6 +64,14 @@ function playTrack() {
       alert("Song failed to load");
       console.log(err);
     });
+}
+
+function displayDesc() {
+  if (songDesc.style.display === "none") {
+    songDesc.style.display = "block"
+  } else {
+    songDesc.style.display = "none"
+  }
 }
 
 function pauseTrack() {
