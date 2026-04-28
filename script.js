@@ -67,10 +67,10 @@ function playTrack() {
 }
 
 function displayDesc() {
-  if (songDesc.style.display === "none") {
-    songDesc.style.display = "block"
+  if (getComputedStyle(songDesc).display === "none") {
+    songDesc.style.display = "block";
   } else {
-    songDesc.style.display = "none"
+    songDesc.style.display = "none";
   }
 }
 
@@ -126,6 +126,7 @@ audio.addEventListener("loadedmetadata", () => {
   maxTimeEl.textContent = formatTime(audio.duration);
 });
 
+showSongDesc.addEventListner("click", displayDesc)
 audio.addEventListener("ended", nextTrack);
 loadTrack(trackIndex);
 setVolume();
