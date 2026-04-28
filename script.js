@@ -1,6 +1,6 @@
 let audio = document.getElementById("main-audio")
 let button = document.getElementById("play-pause")
-let showSongDesc = document.GetElementById("showDesc")
+let showSongDesc = document.getElementById("showDesc")
 let volumeSlider = document.querySelector(".volume_slider")
 let seekSlider = document.querySelector(".seek_slider")
 let trackName = document.querySelector(".track-name")
