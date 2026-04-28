@@ -7,6 +7,15 @@ body {
   font-family: Arial, sans-serif;
 }
 
+.showDesc {
+  postion: fixed;
+  width: 80px;
+  height: 30px;
+  padding: 0;
+  bottom: 0px;
+  left: 0px;
+}
+
 /* iPod body */
 .player {
   width: 260px;
