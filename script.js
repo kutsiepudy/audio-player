@@ -31,6 +31,7 @@ function loadTrack(index) {
   audio.currentTime = 0;
   let song = availableSongs[index];
   audio.src = song.file
+  audio.load()
   trackName.textContent = song.track
   artistName.textContent = song.artist
   dateRelease.textContent = song.date || "Unknown"
