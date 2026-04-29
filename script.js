@@ -127,7 +127,7 @@ audio.addEventListener("loadedmetadata", () => {
   maxTimeEl.textContent = formatTime(audio.duration);
 });
 
-showSongDesc.addEventListner("click", displayDesc)
+showSongDesc.addEventListener("click", displayDesc)
 audio.addEventListener("ended", nextTrack);
 loadTrack(trackIndex);
 setVolume();
