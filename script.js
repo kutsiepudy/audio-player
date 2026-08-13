@@ -38,6 +38,16 @@ function loadTrack(index) {
   dateRelease.textContent = song.date || "Unknown"
   songDesc.textContent = song.desc || "I dont know"
 
+  if (song.bg) {
+    document.body.style.backgroundImage = `url("${song.bg}")`;
+    document.body.style.backgroundSize = "cover";
+    document.body.style.backgroundPosition = "center";
+    document.body.classlist.add("song-has-bg");
+  } else {
+    document.body.style.backgroundImage = "";
+    document.body.classlist.remove("song-has-bg");
+  }
+
   seekSlider.value = 0
   button.textContent = "▶︎"
   currentTimeEl.textContent = "0:00";
