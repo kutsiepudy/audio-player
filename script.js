@@ -23,7 +23,8 @@ const availableSongs = [
   {artist: "Sunny Day Service", track: "Kokoro Ni Kumo Wo Motsu Shonen", date: "2020", file: "Kokoro Ni Kumo Wo Motsu Shonen.mp3", desc: "This might get personal. Every time I hear this, I think about leaving everything and just going somewhere new. Meeting people, seeing different cultures, experiencing Intercultural Communication instead of being stuck in one place forever."},
   {artist: "Franz Liszt", track: "Liebestraum No. 3", date: "1850", file: "Liszt - Liebestraum No. 3 (Love Dream).mp3", desc: "Love, that’s what this is. It feels like something pure, like it should be understood without explanation. I think about performing it, but I don’t think I have the confidence for that kind of exposure. Maybe that’s where Inclusion matters, feeling like you belong before you even start."},
   {artist: "Vundabar", track: "Alien Blues", date: "2015", file: "Alien Blues.mp3", desc: "This song marks a huge shift in my life. Martial arts, coding, my first relationship, trying to stop being lazy. It felt like I was trying to build something fair for myself, like my own sense of Equity in how I live."},
-  {artist: "Kurt Cobain", track: "Montage of Kurt", date: "1988", file: "goofykurtsong.mp3", desc: "I added this because it’s funny. I have a friend who finds it scary, which is weird to me. I don’t know, it just shows how people hear things differently. You can skip it if you want, it’s just here."}
+  {artist: "Kurt Cobain", track: "Montage of Kurt", date: "1988", file: "goofykurtsong.mp3", desc: "I added this because it’s funny. I have a friend who finds it scary, which is weird to me. I don’t know, it just shows how people hear things differently. You can skip it if you want, it’s just here."},
+  {artist: "nujabes", track "battlecry", date: "2004", file: "battlecry.mp3", desc: "just watch Samurai Champloo, it's one of my favorites", bg: "samuraiChamploo.png" }
 ]
 
 function loadTrack(index) {
