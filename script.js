@@ -35,7 +35,7 @@ function loadTrack(index) {
   audio.pause();
   audio.currentTime = 0;
   let song = availableSongs[index];
-  audio.src = song.file
+  audio.src = "audio/" + song.file
   audio.load()
   trackName.textContent = song.track
   artistName.textContent = song.artist
@@ -43,7 +43,7 @@ function loadTrack(index) {
   songDesc.textContent = song.desc || "I dont know"
 
   if (song.bg) {
-    document.body.style.backgroundImage = `url("${song.bg}")`;
+    document.body.style.backgroundImage = `url("background/${song.bg}")`;
     document.body.style.backgroundSize = "cover";
     document.body.style.backgroundPosition = "center";
     document.body.classList.add("song-has-bg");
