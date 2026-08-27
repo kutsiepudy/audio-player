@@ -145,5 +145,12 @@ audio.addEventListener("loadedmetadata", () => {
 
 showSongDesc.addEventListener("click", displayDesc)
 audio.addEventListener("ended", nextTrack);
+button.addEventListener("click", playPauseTrack);
+const navButtons = document.querySelectorAll(".buttons button");
+navButtons[0].addEventListener("click", previousTrack);
+navButtons[1].addEventListener("click", playPauseTrack);
+navButtons[2].addEventListener("click", nextTrack);
+volumeSlider.addEventListener("input", setVolume);
+seekSLider.addEventListener("input", seekTo)
 loadTrack(trackIndex);
 setVolume();
