@@ -10,6 +10,12 @@ let songDesc = document.querySelector(".description")
 let currentTimeEl = document.getElementById("current-time")
 let maxTimeEl = document.getElementById("max-time")
 let trackIndex = 0;
+const cursor = document.getElementById("PumpkinPieCookie");
+const cursorAsset = document.getElementById("cursorAsset");
+const idle = "cursor/pumpkinPieCookieIdle.png";
+const hover = "cursor/pumpkinPieCookieLaugh.gif";
+const click = "cursor/explosion.gif"
+let isHoveringLink = false;
 const availableSongs = [
   {artist: "The Smiths", track: "This Charming Man", date: "1983", file: "ThisCharmingMan.mp3", desc: "This is like a week before the culture fair, before I found out I was being cheated on. I listened to this nonstop because it felt fun, like a break from everything. I even learned it on guitar, thought maybe I could actually say something through it since my Verbal Communication is terrible. Yeah that didn’t work. Still, even after everything, I listen to it and it cuts through my head a bit.", bg: "thesmiths.png"},
   {artist: "Nirvana", track: "About a Girl", date: "1989", file: "AboutAGirl.mp3", desc: "Arguably a good Nirvana song. I wish I could play this with a band, feels like the kind of place where you don’t have to explain yourself. Like the Communication Climate would just be understood, no judgment, just sound. It feels safe in a way.", bg: "bleach.png"},
@@ -141,6 +147,23 @@ audio.addEventListener("timeupdate", () => {
 
 audio.addEventListener("loadedmetadata", () => {
   maxTimeEl.textContent = formatTime(audio.duration);
+});
+
+document.addEventListener('mousemove', (e) => {
+  cursor.style.transform = `translate3d(${e.clientX}px, ${e.clientY}px, 0)`;
+  if (!isHoveringLink && !document.querySelector(".cursor-container.is-clicking")) {
+    cursorAsset.src = idle;
+  }
+});
+
+document.addEventListener('mousedown', () => {
+  cursor.classList.add('is-clicking');
+  cursorAsset.src = click;
+});
+
+document.addEventListener('mouseup', () => {
+  cursor.classList.remove('is-clicking');
+  cursorAsset.src = isHoveringLink ? hover : idle;
 });
 
 showSongDesc.addEventListener("click", displayDesc)
