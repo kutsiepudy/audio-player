@@ -1,21 +1,22 @@
-let audio = document.getElementById("main-audio")
-let button = document.getElementById("play-pause")
-let showSongDesc = document.getElementById("showDesc")
-let volumeSlider = document.querySelector(".volume_slider")
-let seekSlider = document.querySelector(".seek_slider")
-let trackName = document.querySelector(".track-name")
-let artistName = document.querySelector(".track-artist")
-let dateRelease = document.querySelector(".release-date")
-let songDesc = document.querySelector(".description")
-let currentTimeEl = document.getElementById("current-time")
-let maxTimeEl = document.getElementById("max-time")
+let audio = document.getElementById("main-audio");
+let button = document.getElementById("play-pause");
+let showSongDesc = document.getElementById("showDesc");
+let volumeSlider = document.querySelector(".volume_slider");
+let seekSlider = document.querySelector(".seek_slider");
+let trackName = document.querySelector(".track-name");
+let artistName = document.querySelector(".track-artist");
+let dateRelease = document.querySelector(".release-date");
+let songDesc = document.querySelector(".description");
+let currentTimeEl = document.getElementById("current-time");
+let maxTimeEl = document.getElementById("max-time");
 let trackIndex = 0;
+let isHoveringLink = false;
+const interactive = document.querySelectorAll("a, button");
 const cursor = document.getElementById("PumpkinPieCookie");
 const cursorAsset = document.getElementById("cursorAsset");
 const idle = "cursor/pumpkinPieCookieIdle.png";
 const hover = "cursor/pumpkinPieCookieLaugh.gif";
-const click = "cursor/explosion.gif"
-let isHoveringLink = false;
+const click = "cursor/explosion.gif;
 const availableSongs = [
   {artist: "The Smiths", track: "This Charming Man", date: "1983", file: "ThisCharmingMan.mp3", desc: "This is like a week before the culture fair, before I found out I was being cheated on. I listened to this nonstop because it felt fun, like a break from everything. I even learned it on guitar, thought maybe I could actually say something through it since my Verbal Communication is terrible. Yeah that didn’t work. Still, even after everything, I listen to it and it cuts through my head a bit.", bg: "thesmiths.png"},
   {artist: "Nirvana", track: "About a Girl", date: "1989", file: "AboutAGirl.mp3", desc: "Arguably a good Nirvana song. I wish I could play this with a band, feels like the kind of place where you don’t have to explain yourself. Like the Communication Climate would just be understood, no judgment, just sound. It feels safe in a way.", bg: "bleach.png"},
@@ -165,6 +166,18 @@ document.addEventListener('mousedown', () => {
 document.addEventListener('mouseup', () => {
   cursor.classList.remove('is-clicking');
   cursorAsset.src = isHoveringLink ? hover : idle;
+});
+
+interactive.foreach(el => {
+  el.addEventListener('mouseenter', => {
+    isHoveringLink = true;
+    cursorAsset.src = hover;
+  });
+
+  el.addEventListener('mouseleave', => {
+    isHoveringLink = false;
+    cursorAsset.src = idle;
+  });
 });
 
 showSongDesc.addEventListener("click", displayDesc)
