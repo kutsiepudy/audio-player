@@ -168,7 +168,7 @@ document.addEventListener('mouseup', () => {
   cursorAsset.src = isHoveringLink ? hover : idle;
 });
 
-interactive.foreach(el => {
+interactive.forEach(el => {
   el.addEventListener('mouseenter', () => {
     isHoveringLink = true;
     cursorAsset.src = hover;
