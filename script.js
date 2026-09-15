@@ -169,12 +169,12 @@ document.addEventListener('mouseup', () => {
 });
 
 interactive.foreach(el => {
-  el.addEventListener('mouseenter', => {
+  el.addEventListener('mouseenter', () => {
     isHoveringLink = true;
     cursorAsset.src = hover;
   });
 
-  el.addEventListener('mouseleave', => {
+  el.addEventListener('mouseleave', () => {
     isHoveringLink = false;
     cursorAsset.src = idle;
   });
