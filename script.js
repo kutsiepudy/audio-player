@@ -16,7 +16,7 @@ const cursor = document.getElementById("PumpkinPieCookie");
 const cursorAsset = document.getElementById("cursorAsset");
 const idle = "cursor/pumpkinPieCookieIdle.png";
 const hover = "cursor/pumpkinPieCookieLaugh.gif";
-const click = "cursor/explosion.gif;
+const click = "cursor/explosion.gif";
 const availableSongs = [
   {artist: "The Smiths", track: "This Charming Man", date: "1983", file: "ThisCharmingMan.mp3", desc: "This is like a week before the culture fair, before I found out I was being cheated on. I listened to this nonstop because it felt fun, like a break from everything. I even learned it on guitar, thought maybe I could actually say something through it since my Verbal Communication is terrible. Yeah that didn’t work. Still, even after everything, I listen to it and it cuts through my head a bit.", bg: "thesmiths.png"},
   {artist: "Nirvana", track: "About a Girl", date: "1989", file: "AboutAGirl.mp3", desc: "Arguably a good Nirvana song. I wish I could play this with a band, feels like the kind of place where you don’t have to explain yourself. Like the Communication Climate would just be understood, no judgment, just sound. It feels safe in a way.", bg: "bleach.png"},
