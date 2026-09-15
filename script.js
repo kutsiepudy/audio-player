@@ -35,7 +35,8 @@ const availableSongs = [
   {artist: "The Strokes", track: "The Adults Are Talking", date: "2020", file: "The Adults Are Talking.mp3", desc: "This is genuinely a good song, I like it it got me into the strokes and such y'know" },
   {artist: "requiem for you", track: "cannot get over you", date: "2024", file: "cannot get over you.mp3", desc: "I'm not emo I swear, but this song is good, i found it back in 8th grade, now im listening to it after a breakup, im not emo i swear" },
   {artist: "nujabes", track: "Feather (feat. Cise Starr & Akin from CYNE)", date: "2005", file: "Feather (feat. Cise Starr & Akin from CYNE).mp3", desc: "Because im nothing but a rebellious jerk according to some poeple, apperently this songs about someone who is tired of modern news and stuff like that, makes sense", bg: "mugen.png" },
-  {artist: "overnight", track: "mirrors demo", date: "2025", file: "mirrors demo.mp3", desc: "this song was gonna be in the project, was the og song, then i went 'nah mr wont like it' so i scrapped it and replaced it with chase by batta" }
+  {artist: "overnight", track: "mirrors demo", date: "2025", file: "mirrors demo.mp3", desc: "this song was gonna be in the project, was the og song, then i went 'nah mr wont like it' so i scrapped it and replaced it with chase by batta" },
+  {artist: "Old Sweetheart", track: "Structure (Demo)", date: "2022", file "Structure (Demo).mp3". desc: "This song is lit not gonna lie. I like playing it on guitar, it's fun. Wonder if it'd be fun to play with a band. Yes I'm still thinking about the whole band thing."}
 ]
 
 function loadTrack(index) {
