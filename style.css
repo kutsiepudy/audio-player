@@ -248,3 +248,7 @@ a:focus, button:focus {
   .content-box { margin: 8px; padding: 10px; }
   .toggle-btn { margin-left: 8px; margin-right: 8px; }
 }
+
+a:hover, button:hover {
+  --is-hovering: true;
+}
