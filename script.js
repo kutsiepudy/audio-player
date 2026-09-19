@@ -1,5 +1,6 @@
 let audio = document.getElementById("main-audio");
 let button = document.getElementById("play-pause");
+let songLoop = document.getElementById("loop");
 let showSongDesc = document.getElementById("showDesc");
 let volumeSlider = document.querySelector(".volume_slider");
 let seekSlider = document.querySelector(".seek_slider");
@@ -92,6 +93,10 @@ function playTrack() {
     });
 }
 
+function toggleLoop() {
+  audio.loop = !audio.loop;
+}
+
 function displayDesc() {
   if (getComputedStyle(songDesc).display === "none") {
     songDesc.style.display = "block";
@@ -181,7 +186,8 @@ interactive.forEach(el => {
   });
 });
 
-showSongDesc.addEventListener("click", displayDesc)
+songLoop.addEventListener("click", toggleLoop);
+showSongDesc.addEventListener("click", displayDesc);
 audio.addEventListener("ended", nextTrack);
 button.addEventListener("click", playPauseTrack);
 const navButtons = document.querySelectorAll(".buttons button");
