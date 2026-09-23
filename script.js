@@ -42,7 +42,8 @@ const availableSongs = [
   {artist: "Kind of Like Spitting", track: "Birds of a Feather", date: "2000", file: "Birds of a Feather.mp3", desc: "I found this song after I got into an argument with a friend, it was because of somehting I did. I regret it a lot, as of writing this I believe she doesn't want to be friends anymore and that's okay. I hope it isn't true y'know"},
   {artist: "bôa", track: "Duvet", date: "1998", file: "Duvet.mp3", desc: "LAIN IS BALLING, LAIN IS FADED. Serial Expirements Lain is good; I really need to finish it.", bg: "lain-dance.gif"},
   {artist: "ippo.tsk", track: "taste the rain", date: "2022", file: "taste the rain.mp3", desc: "this song is pretty, I like it"},
-  {artist: "The Grinns", track: "Why Do You Lie?", date: "2018", file: "Why Do You Lie.mp3", desc: "She doesn't want to be my friend anymore, and that's okay. It hurts she lied about the reason though."}
+  {artist: "The Grinns", track: "Why Do You Lie?", date: "2018", file: "Why Do You Lie.mp3", desc: "She doesn't want to be my friend anymore, and that's okay. It hurts she lied about the reason though."},
+  {artist: "Radiohead", track: "No Surprises", date: "1997", file: "No Surprises.mp3", desc: "Honestly how did i not add Radiohead to my assignment, they define so much, this song in particular was my first Radiohead song, friend introduced it to me, makes me want a peaceful life where im married dancing in a room with my wife, where im finally at peace, this also marks when i was midway through my training arc, and it's the first fingerpicking song i learned on guitar, thank you Radiohead"}
 ]
 
 function loadTrack(index) {
