@@ -41,13 +41,14 @@ const availableSongs = [
   {artist: "Old Sweetheart", track: "Structure (Demo)", date: "2022", file: "Structure (Demo).mp3", desc: "This song is lit not gonna lie. I like playing it on guitar, it's fun. Wonder if it'd be fun to play with a band. Yes I'm still thinking about the whole band thing."},
   {artist: "Kind of Like Spitting", track: "Birds of a Feather", date: "2000", file: "Birds of a Feather.mp3", desc: "I found this song after I got into an argument with a friend, it was because of somehting I did. I regret it a lot, as of writing this I believe she doesn't want to be friends anymore and that's okay. I hope it isn't true y'know"},
   {artist: "bôa", track: "Duvet", date: "1998", file: "Duvet.mp3", desc: "LAIN IS BALLING, LAIN IS FADED. Serial Expirements Lain is good; I really need to finish it.", bg: "lain-dance.gif"},
-  {artist: "ippo.tsk", track: "taste the rain", date: "2022", file: "taste the rain.mp3", desc: "this song is pretty, I like it"}
+  {artist: "ippo.tsk", track: "taste the rain", date: "2022", file: "taste the rain.mp3", desc: "this song is pretty, I like it"},
+  {artist: "The Grinns", track: "Why Do You Lie?", date: "2018", file: "Why Do You Lie.mp3", desc: "She doesn't want to be my friend anymore, and that's okay. It hurts she lied about the reason though."}
 ]
 
 function loadTrack(index) {
   audio.pause();
   audio.currentTime = 0;
-  let song = availableSongs[index];
+  let song = availableSongs[index];She 
   audio.src = "audio/" + song.file
   audio.load()
   trackName.textContent = song.track
