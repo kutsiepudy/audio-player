@@ -48,7 +48,7 @@ const availableSongs = [
 function loadTrack(index) {
   audio.pause();
   audio.currentTime = 0;
-  let song = availableSongs[index];She 
+  let song = availableSongs[index];
   audio.src = "audio/" + song.file
   audio.load()
   trackName.textContent = song.track
