@@ -99,6 +99,12 @@ function playTrack() {
 
 function toggleLoop() {
   audio.loop = !audio.loop;
+  
+  if (audio.loop) {
+    songLoop.textContent = "Loop: ON";
+  } else {
+    songLoop.textContent = "Loop: OFF";
+  }
 }
 
 function displayDesc() {
