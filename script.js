@@ -51,21 +51,18 @@ function loadTrack(index) {
   audio.pause();
   audio.currentTime = 0;
   let song = availableSongs[index];
-  audio.src = "audio/" + song.file
+  audio.src = `audio/${song.file}`
   audio.load()
   trackName.textContent = song.track
   artistName.textContent = song.artist
   dateRelease.textContent = song.date || "Unknown"
   songDesc.textContent = song.desc || "I dont know"
+  document.body.style.backgroundImage = song.bg ? `url(background/${song.bg})` : "none";
+  document.body.style.backgroundSize = "cover";
+  document.body.style.backgroundPosition = "center";
 
-  if (song.bg) {
-    document.body.style.backgroundImage = `url("background/${song.bg}")`;
-    document.body.style.backgroundSize = "cover";
-    document.body.style.backgroundPosition = "center";
-    document.body.classList.add("song-has-bg");
-  } else {
-    document.body.style.backgroundImage = "";
-    document.body.classList.remove("song-has-bg");
+  if (song.track === "battlecry") {
+    console.log("https://archive.org/details/samurai-champloo-complete-2004/Samurai+Champloo+-+S01E01+-+Tempestuous+Temperaments.mkv")
   }
 
   seekSlider.value = 0
