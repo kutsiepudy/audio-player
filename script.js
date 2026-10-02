@@ -62,7 +62,7 @@ function loadTrack(index) {
   document.body.style.backgroundPosition = "center";
 
   if (song.track === "battlecry") {
-    console.log("https://archive.org/details/samurai-champloo-complete-2004/Samurai+Champloo+-+S01E01+-+Tempestuous+Temperaments.mkv")
+    console.log("video testing failed...")
   }
 
   seekSlider.value = 0
