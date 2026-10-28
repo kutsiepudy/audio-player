@@ -49,7 +49,7 @@ const availableSongs = [
   {artist: "The Smashing Pumpkins", track: "Bullet With Butterfly Wings", date: "1995", file: "Bullet With Butterfly Wings.mp3", desc: "Nothing between me and her changed, besides the distance, claims she wants to still be friends, her actions dont support that, frankly i've been distant too and i should probably try and talk to her but she still forgets about me.... despite all my rage im still a rat in a cage"},
   {artist: "Nirvana", track: "Where Did You Sleep Last Night? (LIVE)", date: "1994", file: "Where Did You Sleep Last Night (Live).mp3", desc: "a few things changed, between me and her? i dont know, but me? me i decided to embrace the rebellion the whole thorn in the ass aspect, yet this song reminds me as vulnarable as everyone else.", bg: "ripKurt.png"},
   {artist: "Nirvana", track: "Radio Friendly Unit Shifter", date: "1993", file: "Radio Friendly Unit Shifter.mp3", desc: "DONT TELL ME WHAT TO DO DICKWADS!!!!!!!!!!!!!!!", bg: "thePic.png"},
-  {artist: "The Cribs", track "Things You Should Be Knowing", date: "2004", file: "Things You Should Be Knowing.mp3", desc: "YOU WERE DRUNK AND UNBELIEVEBLY COOL, IM SUCH A FUCKING LOSER MAN, SOME WEIRD KID EVERYONE LOOKS AT AND GOES 'EWWWWWWWWWWWWW' I HATE ALL PEOPLE FOR THEY ARE THE PHONY BITCHES EVEN SHE IS ONE OF THEM"}
+  {artist: "The Cribs", track: "Things You Should Be Knowing", date: "2004", file: "Things You Should Be Knowing.mp3", desc: "YOU WERE DRUNK AND UNBELIEVEBLY COOL, IM SUCH A FUCKING LOSER MAN, SOME WEIRD KID EVERYONE LOOKS AT AND GOES 'EWWWWWWWWWWWWW' I HATE ALL PEOPLE FOR THEY ARE THE PHONY BITCHES EVEN SHE IS ONE OF THEM"}
 ]
 
 function loadTrack(index) {
