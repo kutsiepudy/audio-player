@@ -50,7 +50,7 @@ const availableSongs = [
   {artist: "Nirvana", track: "Where Did You Sleep Last Night? (LIVE)", date: "1994", file: "Where Did You Sleep Last Night (Live).mp3", desc: "a few things changed, between me and her? i dont know, but me? me i decided to embrace the rebellion the whole thorn in the ass aspect, yet this song reminds me as vulnarable as everyone else.", bg: "ripKurt.png"},
   {artist: "Nirvana", track: "Radio Friendly Unit Shifter", date: "1993", file: "Radio Friendly Unit Shifter.mp3", desc: "DONT TELL ME WHAT TO DO DICKWADS!!!!!!!!!!!!!!!", bg: "thePic.png"},
   {artist: "The Cribs", track: "Things You Should Be Knowing", date: "2004", file: "Things You Should Be Knowing.mp3", desc: "YOU WERE DRUNK AND UNBELIEVEBLY COOL, IM SUCH A FUCKING LOSER MAN, SOME WEIRD KID EVERYONE LOOKS AT AND GOES 'EWWWWWWWWWWWWW' I HATE ALL PEOPLE FOR THEY ARE THE PHONY BITCHES EVEN SHE IS ONE OF THEM"},
-  {artist: "Nirvana", track: "Stay Away", date: "1991", file "Stay Away.mp3", desc: "lot of Nirvana, parents found out, found out what? im not religious? somehow that's a bad thing, and y'know what i have to say IF BEING YOUR SON MEANS BOWING AND GROVELING AT THEIR FEET THAN I'D RATHER BE THE SON OF NOBODY", bg: "burn.png"}
+  {artist: "Nirvana", track: "Stay Away", date: "1991", file: "Stay Away.mp3", desc: "lot of Nirvana, parents found out, found out what? im not religious? somehow that's a bad thing, and y'know what i have to say IF BEING YOUR SON MEANS BOWING AND GROVELING AT THEIR FEET THAN I'D RATHER BE THE SON OF NOBODY", bg: "burn.png"}
 ]
 
 function loadTrack(index) {
