@@ -1,3 +1,4 @@
+import {availableSongs} from "./songs.js";
 let audio = document.getElementById("main-audio");
 let button = document.getElementById("play-pause");
 let songLoop = document.getElementById("loop");
